@@ -8,7 +8,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'python -m sources/run.py'
+                sh 'python sources/run.py'
             }
         }
     }
