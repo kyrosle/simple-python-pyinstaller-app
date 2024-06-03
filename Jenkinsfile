@@ -11,7 +11,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'python sources/run.py'
+                sh "python sources/run.py '${params.TESTPARAM}'"
             }
         }
     }
