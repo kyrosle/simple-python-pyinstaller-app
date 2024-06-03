@@ -1,5 +1,8 @@
 pipeline {
     agent none
+    parameters {
+      string(name: 'TESTPARAM', defaultValue: 'default value', description: 'A parameter passed to the Python script')
+    }
     stages {
         stage('Build') {
             agent {
